@@ -21,9 +21,9 @@ public class Solution {
         String B=sc.next();
 		
         if(isAnagram(A,B))
-			System.out.println("Anagrams");
+		System.out.println("Anagrams");
         else 
-			System.out.println("Not Anagrams");
+		System.out.println("Not Anagrams");
 
     }
 }

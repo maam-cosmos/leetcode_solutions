@@ -11,7 +11,8 @@ public class Main {
         char[] parenArr;
         boolean flag = false;
         parenArr = s.toCharArray();
-
+		
+		//Boundary cases 
         if (strLen == 0 || (strLen % 2) != 0)
             return false;
 
@@ -34,6 +35,7 @@ public class Main {
                 parenStack.push(parenArr[i]);
             }
         }
+		//For statck based solutions, remember to check whether stack is empty.
         if (!parenStack.empty())
             return false;
         return flag;
